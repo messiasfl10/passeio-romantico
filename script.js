@@ -58,7 +58,7 @@ const locais = [
   }
 ];
 
-const raioDesbloqueio = 50; // metros para desbloquear o local
+const raioDesbloqueio = 5000; // metros para desbloquear o local
 const avisoProximo = 150;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
@@ -156,12 +156,15 @@ document.getElementById("startBtn").addEventListener("click", () => {
 
 // ===== Carrossel automático =====
 function iniciarCarrossel(id){
-  const track = document.querySelector(`#${id} .carousel-track`);
+  const carousel = document.getElementById(id);
+  const track = carousel.querySelector(".carousel-track");
   const slides = track.children; 
   let index = 0;
+
   setInterval(() => { 
     index = (index + 1) % slides.length; 
-    track.style.transform = `translateX(-${index*100}%)`; 
+    const width = carousel.offsetWidth; // largura real
+    track.style.transform = `translateX(-${index * width}px)`; 
   }, 3000);
 }
 

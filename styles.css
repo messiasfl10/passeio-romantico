@@ -110,8 +110,13 @@ body {
 /* ===== Carrossel ===== */
 .carousel {
   overflow: hidden;
-  width: 200px;
+  width: 220px;          /* container fixo */
+  height: 320px;         /* altura definida para caber verticais */
   margin: 0 auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .carousel-track {
@@ -119,10 +124,11 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-.carousel img {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
+.carousel-track img {
+  flex: 0 0 100%;        /* cada imagem ocupa 100% do carrossel */
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;     /* cobre o espaço mantendo proporção */
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 0, 102, 0.5);
 }
