@@ -55,7 +55,7 @@ const locais = [
     nome: "Moranga Bistrô",
     lat: -3.721943260342315,
     lng: -38.51256693309049,
-    fotos: ["img/moranga1.jpg","img/moranga2.jpg","img/moranga3.jpg","img/moranga4.jpg"],
+    fotos: ["img/moranga1.jpg","img/moranga2.jpg","img/moranga3.jpg","img/moranga4.jpg","img/moranga5.jpg"],
     texto: "Enfim, chegamos em um lugar muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
   }
 ];
