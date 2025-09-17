@@ -87,7 +87,7 @@ function criarLocal(local){
 
   local.fotos.forEach(foto => { 
     const img = document.createElement("img"); 
-    img.src = foto; 
+    img.src = foto;     
     track.appendChild(img); 
   });
 
