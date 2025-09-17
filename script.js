@@ -1,5 +1,5 @@
 // ===== Contador de amor =====
-const startDate = new Date("2023-04-23T00:00:00");
+const startDate = new Date("2022-09-23T18:00:00");
 function atualizarContador(){
   const now = new Date();
   let diff = now - startDate;
