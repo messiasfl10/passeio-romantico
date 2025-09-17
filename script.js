@@ -58,7 +58,7 @@ const locais = [
   }
 ];
 
-const raioDesbloqueio = 5000; // metros para desbloquear o local
+const raioDesbloqueio = 50; // metros para desbloquear o local
 const avisoProximo = 150;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
