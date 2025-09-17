@@ -29,28 +29,28 @@ const locais = [
     nome:"Theatro José de Alencar",
     lat:-3.74046829401944, lng:-38.53463914231671, 
     fotos:["img/theatro1.jpg","img/theatro2.jpg","img/theatro3.jpg"],
-    texto:"Foi a primeira vez que nos encontramos, no Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo sorriso, presença e jeito dela. 💘"
+    texto:"Foi neste local que nos encontramos pela primeira vez, em um Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo seu sorriso, pelo seu jeito e pela sua companhia 💜"
   },
   {
     id:"local2",
     nome:"IJF",
     lat:-3.7346081540816245, lng:-38.53090624901294,
     fotos:["img/ijf1.jpg","img/ijf2.jpg"],
-    texto:"Local onde nos vimos pela primeira vez após o Show. Cada vez que eu a via, ficava mais feliz e já sabia que queria amá-la e cuidar dela. 💖"
+    texto:"Local onde nos vimos pela primeira vez após o Show. Precisei te encontrar novamente, pois somente uma não era suficiente. Cada vez que eu via você e permanecia ao seu lado, ficava mais feliz e, de algum maneira, após alguns encontro, já sabia que queria te amar e cuidar de você 💖"
   },
   {
     id:"local3",
     nome:"Praia de Iracema",
     lat:-3.7236600583466326, lng:-38.50541905373625, 
     fotos:["img/praia1.jpg","img/praia2.jpg"],
-    texto:"Local do nosso pedido de namoro, além de vários pores do sol, passeios e declarações, noites de luar e muito amor. 💕"
+    texto:"Local do nosso pedido de namoro, além de vários pores do sol, passeios, declarações, noites de luar e muito amor. 💕"
   },
   {
     id:"local4",
     nome:"Moranga Bistrô",
     lat:-3.721943260342315, lng:-38.51256693309049,
     fotos:["img/moranga1.jpg","img/moranga2.jpg"],
-    texto:"Local muito especial e escolhido para um dos momentos mais especiais da nossa vida. 💍"
+    texto:"Chegamos em um Local muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
   }
 ];
 
@@ -149,7 +149,7 @@ function iniciarPasseio(){
 }
 
 document.getElementById("startBtn").addEventListener("click", ()=>{
-  alert("O passeio romântico começou! 💖");
+  alert("O passeio romântico começou! 💜💖");
   iniciarPasseio();
 });
 
