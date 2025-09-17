@@ -27,8 +27,8 @@ const locais = [
   {
     id: "local1",
     nome: "Theatro José de Alencar",
-    lat: -3.74046829401944,
-    lng: -38.53463914231671,
+    lat: -3.7273865549299945,
+    lng: -38.53105755034245,
     fotos: ["img/theatro1.jpg","img/theatro2.jpg","img/theatro3.jpg"],
     texto: "Foi neste local que nos encontramos pela primeira vez, em um Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo seu sorriso, pelo seu jeito e pela sua companhia 💜"
   },
@@ -59,7 +59,7 @@ const locais = [
 ];
 
 const raioDesbloqueio = 50; // metros para desbloquear o local
-const avisoProximo = 200;    // metros para mostrar aviso de proximidade
+const avisoProximo = 150;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
 // ===== Criar seção do local =====
