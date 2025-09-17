@@ -1,0 +1,123 @@
+/* Reset básico */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+/* Fundo degradê preto → roxo → vermelho */
+body { 
+    background: linear-gradient(135deg, #000000, #8A2BE2, #FF0000);
+    color: #fff;
+    overflow-x: hidden; 
+}
+
+/* Seções full screen */
+section { 
+    width: 100%; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: all 1s ease; 
+}
+section.visible { opacity: 1; transform: translateY(0); }
+.content { max-width: 500px; z-index: 2; }
+
+/* Tela inicial */
+.photo { 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    border: 4px solid #fff; 
+    animation: fadeIn 1.5s ease forwards; 
+}
+@keyframes fadeIn { from {opacity: 0; transform: scale(0.9);} to {opacity:1; transform: scale(1);} }
+
+/* Botão */
+button { 
+    padding: 15px 30px; 
+    font-size: 18px; 
+    color: #fff; 
+    background-color: #8A2BE2; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    transition: all 0.3s; 
+}
+button:hover { background-color: #FF0000; }
+
+/* Locais escondidos */
+.location { display: none; }
+
+/* Scroll hint */
+.scroll-hint { margin-top: 20px; font-size: 30px; animation: bounce 1.5s infinite; }
+@keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(10px); } }
+
+/* Texto romântico */
+#romance p { font-size: 20px; line-height: 1.6; font-family: 'Cursive', sans-serif; }
+
+/* Contador estilizado */
+.countdown {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-family: 'Cursive', sans-serif;
+    font-size: 18px;
+}
+.countdown span {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    min-width: 80px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.countdown span:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(255,0,0,0.6);
+}
+.countdown .unit { display: block; font-size: 14px; color: #FFCCCC; }
+
+/* Corações flutuantes */
+#hearts-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+.heart { position: absolute; font-size: 20px; color: rgba(255, 0, 0, 0.8); animation: floatUp 4s linear forwards, glow 1s infinite alternate; }
+@keyframes floatUp { 0% { transform: translateY(0) scale(1); opacity: 1; } 100% { transform: translateY(-800px) scale(1.5); opacity: 0; } }
+@keyframes glow { from { text-shadow: 0 0 5px rgba(255,0,0,0.5),0 0 10px rgba(255,0,0,0.3); } to { text-shadow: 0 0 15px rgba(255,0,0,1),0 0 25px rgba(255,0,0,0.7); } }
+
+/* Coração gigante pulsante */
+#giantHeart { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); font-size: 100px; color: rgba(255, 0, 0, 0.8); z-index: 101; pointer-events: none; transition: transform 0.3s ease, opacity 0.3s ease; opacity: 0; }
+#giantHeart.show { opacity: 1; animation: heartBeat 1s ease 0s 2; }
+@keyframes heartBeat { 0% { transform: translate(-50%, -50%) scale(0.8); } 25% { transform: translate(-50%, -50%) scale(1.2); } 50% { transform: translate(-50%, -50%) scale(0.9); } 75% { transform: translate(-50%, -50%) scale(1.1); } 100% { transform: translate(-50%, -50%) scale(1); } }
+
+/* Mensagem de proximidade */
+#nearbyMessage { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background-color: rgba(255,0,0,0.8); color: #fff; padding: 15px 25px; border-radius: 10px; font-size: 18px; z-index: 100; opacity: 0; transition: opacity 0.5s; }
+
+/* Local 1 - carrossel vertical */
+.carousel { width: 150px; height: 250px; margin: 20px auto; position: relative; overflow: hidden; border-radius: 15px; border: 3px solid #fff; }
+.carousel img { width: 150px; height: 250px; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 1s ease-in-out; border-radius: 15px; }
+.carousel img.active { opacity: 1; }
+
+/* Local 2 - fade + zoom */
+.carousel-zoom { width: 250px; height: 150px; margin: 20px auto; position: relative; overflow: hidden; border-radius: 15px; border: 3px solid #fff; }
+.carousel-zoom img { width: 100%; height: 150px; object-fit: cover; position: absolute; top: 0; left: 0; opacity: 0; transform: scale(1); transition: opacity 1s ease, transform 1s ease; border-radius: 15px; }
+.carousel-zoom img.active { opacity: 1; transform: scale(1.1); }
+
+/* Local 3 - colagem flutuante */
+.collage { width: 250px; height: 250px; margin: 20px auto; position: relative; }
+.collage img { width: 120px; height: 120px; object-fit: cover; position: absolute; border-radius: 15px; border: 3px solid #fff; animation: floatImg 4s ease-in-out infinite alternate; }
+.collage img:nth-child(1) { top: 0; left: 0; animation-delay: 0s; }
+.collage img:nth-child(2) { top: 60px; left: 60px; animation-delay: 1s; }
+.collage img:nth-child(3) { top: 120px; left: 120px; animation-delay: 2s; }
+@keyframes floatImg { 0% { transform: translateY(0px) rotate(0deg); } 100% { transform: translateY(-10px) rotate(2deg); } }
+
+/* Local 4 - fundo + coração central */
+.full-bg { position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0; z-index: 0; }
+#location4 .content { position: relative; z-index: 2; }
+.heart-center { font-size: 120px; color: rgba(255,0,0,0.8); margin-top: 20px; animation: heartBeat 1s ease 0s infinite; }
