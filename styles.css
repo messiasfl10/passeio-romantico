@@ -3,7 +3,8 @@
 html { scroll-behavior: smooth; }
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #000000, #6a0dad, #ff0000);
+  background: linear-gradient(135deg, #000000, #6a0dad);
+  /*background: linear-gradient(135deg, #000000, #6a0dad, #ff0000);*/
   color: white;
   overflow-x: hidden;
 }

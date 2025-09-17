@@ -150,7 +150,7 @@ function iniciarPasseio(){
 }
 
 document.getElementById("startBtn").addEventListener("click", () => {
-  alert("O passeio romântico começou! 💜💖");
+  alert("Em direção ao primeiro lugar! O passeio romântico começou! 💜💖");
   iniciarPasseio();
 });
 
