@@ -46,7 +46,7 @@ const locais = [
     lat: -3.7236600583466326,
     lng: -38.50541905373625,
     fotos: ["img/praia1.jpg","img/praia2.jpg","img/praia3.jpg","img/praia4.jpg","img/praia5.jpg","img/praia6.jpg","img/praia7.jpg","img/praia8.jpg","img/praia9.jpg","img/praia10.jpg","img/praia11.jpg","img/praia12.jpg","img/praia13.jpg","img/praia14.jpg","img/praia15.jpg"],
-    texto: "Lugar de vários pores do sol, passeios, declarações, noites de luar, além do nosso pedido de namoro e muito amor 💕"
+    texto: "Lugar de vários pores do sol, passeios, declarações, noites de luar, além do nosso pedido de namoro e muito amor 💕. Conforme o tempo foi passando, meu amor por você só foi crescendo. Hoje, não me vejo mais sem você, sem sua companhia, suas risadas, suas trapalhadas, seus conselhos, seu sorriso, seu olhar, seu toque, seu abraço, seu beijo ... simplesmente você, pois meu futuro é contigo."
   },
   {
     id: "local4",
