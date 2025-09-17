@@ -126,7 +126,7 @@ function checkLocais(lat, lng){
 
         // Efeito sonoro
         const audio = new Audio("sounds/heartbeat_notify.mp3");
-        audio.volume = 0.3; // volume baixo, suave
+        audio.volume = 1.5; // volume baixo, suave
         audio.play();
         setTimeout(() => aviso.remove(), 5000);
       }
