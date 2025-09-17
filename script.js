@@ -42,10 +42,10 @@ updateCountdown();
 
 // Coordenadas dos locais (substitua com as corretas)
 const locations = [
-    {id: 'location1', lat: -3.742105390710542, lon: -38.53517456138198}, 
-    {id: 'location2', lat: -3.742105390710542, lon: -38.53517456138198},
-    {id: 'location3', lat: -3.742105390710542, lon: -38.53517456138198},
-    {id: 'location4', lat: -3.742105390710542, lon: -38.53517456138198}
+    {id: 'location1', lat: 3.740537, lon: -38.534670},
+    {id: 'location2', lat: 3.740537, lon: -38.534670},
+    {id: 'location3', lat: 3.740537, lon: -38.534670},
+    {id: 'location4', lat: 3.740537, lon: -38.534670}
 ];
 
 // Distância entre coordenadas
@@ -129,3 +129,4 @@ const carousel2=document.querySelectorAll('#location2 .carousel-zoom img');
 let current2=0;
 function nextSlide2(){ carousel2[current2].classList.remove('active'); current2=(current2+1)%carousel2.length; carousel2[current2].classList.add('active'); }
 setInterval(nextSlide2,3000);
+
