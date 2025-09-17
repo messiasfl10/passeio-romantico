@@ -17,7 +17,7 @@ function atualizarContador(){
   let seconds = Math.floor(diff/1000);
 
   document.getElementById("contador").innerText=
-    `${years} anos, ${months} meses, ${days} dias, ${hours}h ${minutes}m ${seconds}s`;
+    `${years} anos, ${months} meses, ${days} dias, ${hours}h, ${minutes}m e ${seconds}s`;
 }
 setInterval(atualizarContador,1000);
 atualizarContador();
