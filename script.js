@@ -119,7 +119,7 @@ function checkLocais(lat, lng){
         const aviso = document.createElement("div");
         aviso.id = `${local.id}-aviso`; 
         aviso.classList.add("aviso");
-        aviso.innerText = `💫 O próximo local "${local.nome}" está próximo!`;
+        aviso.innerText = `💫 O próximo local está próximo!`;
         container.appendChild(aviso);
         setTimeout(() => aviso.remove(), 5000);
       }
