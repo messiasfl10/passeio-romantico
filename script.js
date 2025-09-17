@@ -69,7 +69,7 @@ function checkLocation(position){
         const distance = getDistanceFromLatLonInM(latitude, longitude, nextLoc.lat, nextLoc.lon);
 
         if(distance < 100 && distance >= 50){ showNearbyMessage(nextLoc.id); }
-        if(distance < 50){
+        if(distance < 100){
             const section = document.getElementById(nextLoc.id);
             section.style.display='flex';
             revealSection(section);
@@ -129,4 +129,5 @@ const carousel2=document.querySelectorAll('#location2 .carousel-zoom img');
 let current2=0;
 function nextSlide2(){ carousel2[current2].classList.remove('active'); current2=(current2+1)%carousel2.length; carousel2[current2].classList.add('active'); }
 setInterval(nextSlide2,3000);
+
 
