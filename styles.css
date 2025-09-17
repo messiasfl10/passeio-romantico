@@ -180,3 +180,17 @@ body {
   border-radius: 15px;
   box-shadow: 0 0 15px rgba(255, 0, 102, 0.5);
 }
+
+.mensagem-destino {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #ffd1dc;
+  text-shadow: 0 0 5px rgba(225, 0, 255, 0.755);
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

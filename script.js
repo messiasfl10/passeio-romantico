@@ -60,7 +60,7 @@ const locais = [
   }
 ];
 
-const raioDesbloqueio = 50; // metros para desbloquear o local
+const raioDesbloqueio = 5000; // metros para desbloquear o local
 const avisoProximo = 150;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
@@ -94,6 +94,16 @@ function criarLocal(local){
   carousel.appendChild(track); 
   section.appendChild(carousel);
 
+  // Mensagem extra dependendo do local
+  const msg=document.createElement("p");
+  msg.classList.add("mensagem-destino");
+  if(local.id !== "local4"){
+    msg.textContent = "Estamos indo em direção ao próximo destino... 💫";
+  } else {
+    msg.textContent = "Você chegou ao último lugar! Pode aproveitar, minha Principa linda! ❤️💜";
+  }
+  section.appendChild(msg);
+
   container.appendChild(section);
 
   setTimeout(() => section.classList.add("visible"), 100); // fade-in suave
@@ -126,7 +136,7 @@ function checkLocais(lat, lng){
 
         // Efeito sonoro
         const audio = new Audio("sounds/heartbeat_notify.mp3");
-        audio.volume = 1.5; // volume baixo, suave
+        audio.volume = 1; // volume baixo, suave
         audio.play();
         setTimeout(() => aviso.remove(), 5000);
       }
