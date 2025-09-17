@@ -37,7 +37,7 @@ const locais = [
     nome: "IJF",
     lat: -3.7346081540816245,
     lng: -38.53090624901294,
-    fotos: ["img/ijf1.jpg","img/ijf2.jpg"],
+    fotos: ["img/ijf1.jpg","img/ijf2.jpg","img/ijf3.jpg"],
     texto: "Local onde nos vimos pela primeira vez após o Show. Precisei te encontrar novamente, pois somente uma não era suficiente. Cada vez que eu via você e permanecia ao seu lado, ficava mais feliz e, de algum jeito, após alguns encontros, já sabia que queria te amar e cuidar de você 💖"
   },
   {
@@ -45,20 +45,20 @@ const locais = [
     nome: "Praia de Iracema",
     lat: -3.7236600583466326,
     lng: -38.50541905373625,
-    fotos: ["img/praia1.jpg","img/praia2.jpg"],
-    texto: "Local do nosso pedido de namoro, além de vários pores do sol, passeios, declarações, noites de luar e muito amor 💕"
+    fotos: ["img/praia1.jpg","img/praia2.jpg","img/praia3.jpg","img/praia4.jpg","img/praia5.jpg","img/praia6.jpg","img/praia7.jpg","img/praia8.jpg","img/praia9.jpg","img/praia10.jpg","img/praia11.jpg","img/praia12.jpg","img/praia13.jpg","img/praia14.jpg","img/praia15.jpg"],
+    texto: "Local de vários pores do sol, passeios, declarações, noites de luar, além do nosso pedido de namoro e muito amor 💕"
   },
   {
     id: "local4",
     nome: "Moranga Bistrô",
     lat: -3.721943260342315,
     lng: -38.51256693309049,
-    fotos: ["img/moranga1.jpg","img/moranga2.jpg"],
-    texto: "Chegamos em um Local muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
+    fotos: ["img/moranga1.jpg","img/moranga2.jpg","img/moranga3.jpg","img/moranga4.jpg"],
+    texto: "Enfim, chegamos em um Local muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
   }
 ];
 
-const raioDesbloqueio = 100; // metros para desbloquear o local
+const raioDesbloqueio = 50; // metros para desbloquear o local
 const avisoProximo = 200;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
