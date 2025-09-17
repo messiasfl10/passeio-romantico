@@ -1,11 +1,6 @@
 /* ===== Reset ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* ===== Body e cores ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
 body {
   font-family: 'Arial', sans-serif;
   background: linear-gradient(135deg, #000000, #6a0dad, #ff0000);
@@ -13,16 +8,22 @@ body {
   overflow-x: hidden;
 }
 
-/* ===== Hero ===== */
-#hero {
+/* ===== Seções ===== */
+.section {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   text-align: center;
   padding: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
 }
+.section.visible { opacity: 1; transform: translateY(0); }
+
+/* ===== Hero ===== */
 .hero-photo {
   width: 200px;
   height: auto;
@@ -30,111 +31,43 @@ body {
   margin-bottom: 20px;
   box-shadow: 0 0 20px rgba(255,0,150,0.7);
 }
-.contador {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-.scroll-down {
-  margin-top: 20px;
-  font-size: 2rem;
-  animation: bounce 2s infinite;
-}
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(15px); }
-}
+.contador { font-size:1.2rem; margin-top:10px; }
+.scroll-down { margin-top:20px; font-size:2rem; animation:bounce 2s infinite; }
+@keyframes bounce { 0%,100%{transform:translateY(0);}50%{transform:translateY(15px);} }
 
 /* ===== Introdução ===== */
-#intro {
-  padding: 40px 20px;
-  text-align: center;
-}
-#intro p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
+#intro p { font-size:1.2rem; margin-bottom:20px; }
 #intro button {
-  padding: 10px 25px;
-  font-size: 1rem;
-  border-radius: 30px;
-  border: none;
-  background: #ff0066;
-  color: white;
-  cursor: pointer;
-  box-shadow: 0 0 15px rgba(255,0,102,0.7);
-  transition: transform 0.2s;
+  padding:10px 25px; font-size:1rem; border-radius:30px;
+  border:none; background:#ff0066; color:white; cursor:pointer;
+  box-shadow:0 0 15px rgba(255,0,102,0.7); transition: transform 0.2s;
 }
-#intro button:hover {
-  transform: scale(1.05);
-}
+#intro button:hover { transform:scale(1.05); }
 
-/* ===== Seções de locais ===== */
-.local {
-  padding: 40px 20px;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.local.desbloqueado {
-  opacity: 1;
-  transform: translateY(0);
-}
-.local h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-.local p {
-  margin-bottom: 20px;
-  font-size: 1.1rem;
-}
+/* ===== Locais ===== */
+.local { padding:40px 20px; text-align:center; margin-bottom:50px; }
+.local h2 { font-size:1.5rem; margin-bottom:10px; }
+.local p { margin-bottom:20px; font-size:1.1rem; }
 
 /* ===== Carrossel ===== */
-.carousel {
-  overflow: hidden;
-  width: 200px;
-  margin: 0 auto;
-}
-.carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel img {
-  width: 200px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255,0,102,0.5);
-}
+.carousel { overflow:hidden; width:200px; margin:0 auto; }
+.carousel-track { display:flex; transition:transform 0.5s ease-in-out; }
+.carousel img { width:200px; height:auto; margin-right:10px; border-radius:15px; box-shadow:0 0 15px rgba(255,0,102,0.5); }
 
-/* ===== Aviso de próximo local ===== */
+/* ===== Aviso próximo local ===== */
 .aviso {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 50, 150, 0.9);
-  color: white;
-  padding: 15px 25px;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  box-shadow: 0 0 20px rgba(255,0,150,0.7);
-  opacity: 0;
-  animation: fadeinout 5s forwards;
-  z-index: 9999;
+  position:fixed; top:20px; left:50%; transform:translateX(-50%);
+  background:rgba(255,50,150,0.9); color:white; padding:15px 25px;
+  border-radius:30px; font-size:1rem; font-weight:bold;
+  box-shadow:0 0 20px rgba(255,0,150,0.7); opacity:0;
+  animation:fadeinout 5s forwards; z-index:9999;
 }
 @keyframes fadeinout {
-  0% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
-  10% { opacity: 1; transform: translateX(-50%) translateY(0); }
-  90% { opacity: 1; transform: translateX(-50%) translateY(0); }
-  100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  0%{opacity:0;transform:translateX(-50%) translateY(-20px);}
+  10%{opacity:1;transform:translateX(-50%) translateY(0);}
+  90%{opacity:1;transform:translateX(-50%) translateY(0);}
+  100%{opacity:0;transform:translateX(-50%) translateY(-20px);}
 }
 
 /* ===== Foto única ===== */
-.photo-single {
-  width: 200px;
-  height: auto;
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255,0,102,0.5);
-}
+.photo-single { width:200px; height:auto; border-radius:15px; box-shadow:0 0 15px rgba(255,0,102,0.5); }
