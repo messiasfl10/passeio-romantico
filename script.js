@@ -38,7 +38,7 @@ const locais = [
     lat: -3.7346081540816245,
     lng: -38.53090624901294,
     fotos: ["img/ijf1.jpg","img/ijf2.jpg","img/ijf3.jpg"],
-    texto: "Local onde nos vimos pela primeira vez após o Show. Precisei te encontrar novamente, pois somente uma não era suficiente. Cada vez que eu via você e permanecia ao seu lado, ficava mais feliz e, de algum jeito, após alguns encontros, já sabia que queria te amar e cuidar de você 💖"
+    texto: "Local onde nos vimos pela primeira vez após o Show. Precisei te encontrar novamente, pois somente uma vez não era suficiente. Cada vez que eu via você e permanecia ao seu lado, ficava mais feliz e, de algum jeito, após alguns encontros, já sabia que queria te amar e te fazer mais feliz 💖"
   },
   {
     id: "local3",
