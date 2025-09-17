@@ -30,7 +30,7 @@ const locais = [
     lat: -3.7273865549299945,
     lng: -38.53105755034245,
     fotos: ["img/theatro1.jpg","img/theatro2.jpg","img/theatro3.jpg"],
-    texto: "Foi neste local que nos encontramos pela primeira vez, em um Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo seu sorriso, pelo seu jeito e pela sua companhia 💜"
+    texto: "Foi neste lugar que nos encontramos pela primeira vez, em um Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo seu sorriso, pelo seu jeito e pela sua companhia 💜"
   },
   {
     id: "local2",
@@ -46,7 +46,7 @@ const locais = [
     lat: -3.7236600583466326,
     lng: -38.50541905373625,
     fotos: ["img/praia1.jpg","img/praia2.jpg","img/praia3.jpg","img/praia4.jpg","img/praia5.jpg","img/praia6.jpg","img/praia7.jpg","img/praia8.jpg","img/praia9.jpg","img/praia10.jpg","img/praia11.jpg","img/praia12.jpg","img/praia13.jpg","img/praia14.jpg","img/praia15.jpg"],
-    texto: "Local de vários pores do sol, passeios, declarações, noites de luar, além do nosso pedido de namoro e muito amor 💕"
+    texto: "Lugar de vários pores do sol, passeios, declarações, noites de luar, além do nosso pedido de namoro e muito amor 💕"
   },
   {
     id: "local4",
@@ -54,11 +54,11 @@ const locais = [
     lat: -3.721943260342315,
     lng: -38.51256693309049,
     fotos: ["img/moranga1.jpg","img/moranga2.jpg","img/moranga3.jpg","img/moranga4.jpg"],
-    texto: "Enfim, chegamos em um Local muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
+    texto: "Enfim, chegamos em um lugar muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
   }
 ];
 
-const raioDesbloqueio = 5000; // metros para desbloquear o local
+const raioDesbloqueio = 50; // metros para desbloquear o local
 const avisoProximo = 150;    // metros para mostrar aviso de proximidade
 const container = document.getElementById("locaisContainer");
 
