@@ -34,21 +34,21 @@ const locais = [
   {
     id:"local2",
     nome:"IJF",
-    lat:-3.7361, lng:-38.5265,
+    lat:-3.7346081540816245, lng:-38.53090624901294,
     fotos:["img/ijf1.jpg","img/ijf2.jpg"],
     texto:"Local onde nos vimos pela primeira vez após o Show. Cada vez que eu a via, ficava mais feliz e já sabia que queria amá-la e cuidar dela. 💖"
   },
   {
     id:"local3",
     nome:"Praia de Iracema",
-    lat:-3.7172, lng:-38.5433,
+    lat:-3.7236600583466326, lng:-38.50541905373625, 
     fotos:["img/praia1.jpg","img/praia2.jpg"],
     texto:"Local do nosso pedido de namoro, além de vários pores do sol, passeios e declarações, noites de luar e muito amor. 💕"
   },
   {
     id:"local4",
     nome:"Moranga Bistrô",
-    lat:-3.7274, lng:-38.5330,
+    lat:-3.721943260342315, lng:-38.51256693309049,
     fotos:["img/moranga1.jpg","img/moranga2.jpg"],
     texto:"Local muito especial e escolhido para um dos momentos mais especiais da nossa vida. 💍"
   }
