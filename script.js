@@ -29,8 +29,6 @@ const locais = [
     nome: "Theatro José de Alencar",
     lat: -3.7273865549299945, 
     lng: -38.53105755034245,
-    /*lat: -3.740261181919185,
-    lng: -38.53402855138916,*/
     fotos: ["img/theatro1.jpg","img/theatro2.jpg","img/theatro3.jpg"],
     texto: "Foi neste lugar que nos encontramos pela primeira vez, em um Show do Rodrigo Amarante, e desde aquele momento eu me apaixonei pelo seu sorriso, pelo seu jeito e pela sua companhia 💜"
   },
@@ -53,8 +51,8 @@ const locais = [
   {
     id: "local4",
     nome: "Moranga Bistrô",
-    lat: -3.721943260342315,
-    lng: -38.51256693309049,
+    lat: -3.7216973917394194,
+    lng: -38.51250238276991,
     fotos: ["img/moranga1.jpg","img/moranga2.jpg","img/moranga3.jpg","img/moranga4.jpg","img/moranga5.jpg"],
     texto: "Enfim, chegamos em um lugar muito especial e escolhido para um dos momentos mais especiais da nossa vida ... Saiba que te amarei para sempre ❤️💜"
   }
