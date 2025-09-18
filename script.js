@@ -165,7 +165,7 @@ function iniciarPasseio(){
 }
 
 document.getElementById("startBtn").addEventListener("click", () => {
-  alert("Em direção ao primeiro lugar! O passeio romântico começou! 💜💖");
+  alert("O passeio romântico começou. Em direção ao primeiro lugar! 💜💖");
   iniciarPasseio();
 });
 
